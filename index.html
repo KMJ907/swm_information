@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스윗미 앱 공개 예정</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Pretendard", "Noto Sans KR", sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #bfdbfe, #93c5fd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #1e293b;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border-radius: 28px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(30, 64, 175, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #475569;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .countdown-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #1e3a8a;
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .time-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px 10px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.12);
+      border: 1px solid #dbeafe;
+    }
+
+    .time-box strong {
+      display: block;
+      font-size: 36px;
+      color: #2563eb;
+      margin-bottom: 5px;
+    }
+
+    .time-box span {
+      font-size: 14px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .intro {
+      background: #eff6ff;
+      border-radius: 20px;
+      padding: 22px;
+      font-size: 16px;
+      color: #334155;
+      line-height: 1.8;
+      border: 1px solid #dbeafe;
+    }
+
+    .notice {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+        align-items: flex-start;
+      }
+
+      .container {
+        padding: 30px 20px;
+        border-radius: 24px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .countdown {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .time-box strong {
+        font-size: 28px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .container {
+        padding: 50px 40px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .time-box strong {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="badge">COMING SOON</div>
+
+    <h1>스윗미</h1>
+
+    <p class="subtitle">
+      공부가 조금 더 즐거워지는 성장형 학습 앱<br />
+      스윗미가 곧 공개됩니다.
+    </p>
+
+    <div class="countdown-title">앱 공개까지 남은 시간</div>
+
+    <div class="countdown">
+      <div class="time-box"><strong id="days">0</strong><span>일</span></div>
+      <div class="time-box"><strong id="hours">0</strong><span>시간</span></div>
+      <div class="time-box"><strong id="minutes">0</strong><span>분</span></div>
+      <div class="time-box"><strong id="seconds">0</strong><span>초</span></div>
+    </div>
+
+    <div class="intro">
+      안녕하세요. 스윗미 개발자입니다.<br>
+      여러분들의 많은 관심과 도움 덕분에 스윗미가 곧 공개됩니다.<br>
+      공개 예정 시간은 2026년 05월 13일(수) 00시 00분 00초입니다.<br><br>
+
+      스윗미는 학생 여러분의 공부를 도와주는 타이머, 노트 등 다양한 기능을 제공하는 학습 앱입니다.<br><br>
+
+      앱이 공개된 이후에도 많은 관심과 이용 부탁드리며,<br>
+      사용 중 불편한 점이 있으시면 언제든지 고객센터로 문의해 주세요.<br><br>
+
+      위 카운트다운이 종료되면 이 사이트에서 자세한 안내가 제공될 예정입니다.<br>
+      감사합니다.<br>
+    </div>
+
+    <p class="notice">
+      공개 예정일: 2026년 5월 13일 00시 00분 00초
+    </p>
+  </main>
+
+  <script>
+    const releaseDate = new Date("2026-05-13T00:00:00+09:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      let diff = releaseDate - now;
+
+      if (diff < 0) diff = 0;
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").textContent = d;
+      document.getElementById("hours").textContent = h;
+      document.getElementById("minutes").textContent = m;
+      document.getElementById("seconds").textContent = s;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
