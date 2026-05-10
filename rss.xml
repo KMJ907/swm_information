@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
+  <channel>
+    <title>스윗미 공식 사이트</title>
+    <link>https://swm-info.kro.kr/</link>
+    <description>학생들의 공부를 도와주는 학습 앱 스윗미 공식 사이트입니다.</description>
+    <language>ko-KR</language>
 
-<channel>
-  <title>스윗미 공식 사이트</title>
-  <link>https://swm-info.kro.kr/</link>
-  <description>공부를 도와주는 성장형 학습 앱 스윗미 공식 사이트</description>
-  <language>ko</language>
-
-  <item>
-    <title>스윗미 앱 공개 예정</title>
-
-    <link>https://YOUR_DOMAIN/</link>
-
-    <description>
-      스윗미 앱이 2026년 5월 13일 공개됩니다.
-    </description>
-
-    <pubDate>Sun, 10 May 2026 18:00:00 +0900</pubDate>
-
-    <guid>https://swm-info.kro.kr/</guid>
-  </item>
-
-</channel>
+    <item>
+      <title>스윗미 앱 공개 안내</title>
+      <link>https://swm-info.kro.kr/</link>
+      <description>스윗미 앱은 공부 타이머, 노트, 학습 기록 등 학생들의 공부를 돕는 기능을 제공합니다.</description>
+      <pubDate>Sun, 10 May 2026 18:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://swm-info.kro.kr/</guid>
+    </item>
+  </channel>
 </rss>
