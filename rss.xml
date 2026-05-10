@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+  <title>스윗미 공식 사이트</title>
+  <link>https://YOUR_DOMAIN/</link>
+  <description>공부를 도와주는 성장형 학습 앱 스윗미 공식 사이트</description>
+  <language>ko</language>
+
+  <item>
+    <title>스윗미 앱 공개 예정</title>
+
+    <link>https://YOUR_DOMAIN/</link>
+
+    <description>
+      스윗미 앱이 2026년 5월 13일 공개됩니다.
+    </description>
+
+    <pubDate>Sun, 10 May 2026 18:00:00 +0900</pubDate>
+
+    <guid>https://YOUR_DOMAIN/</guid>
+  </item>
+
+</channel>
+</rss>
