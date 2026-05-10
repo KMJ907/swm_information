@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+Sitemap: https://swm-info.kro.kr/sitemap.xml
 
-RSS: https://YOUR_DOMAIN/rss.xml
+RSS: https://swm-info.kro.kr/rss.xml
